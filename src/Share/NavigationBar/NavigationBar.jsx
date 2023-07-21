@@ -24,18 +24,18 @@ const NavigationBar = () => {
                 user ? <div>
                   <li ><NavLink to={"/"}>Home</NavLink></li>
                   <li tabIndex={0}>
-                    <NavLink to={"/allToys"}>Colleges</NavLink>
+                    <NavLink to={"/colleges"}>Colleges</NavLink>
                   </li>
-                  <li><NavLink to={"/myToys"}>Admission</NavLink></li>
-                  <li><NavLink to={"/addAToy"}>My College</NavLink></li>
+                  <li><NavLink to={"/admission"}>Admission</NavLink></li>
+                  <li><NavLink to={"/myCollege"}>My College</NavLink></li>
                  
                 </div> : <div>
                   <li ><NavLink to={"/"}>Home</NavLink></li>
                   <li tabIndex={0}>
-                    <NavLink to={"/allToys"}>Colleges</NavLink>
+                    <NavLink to={"/colleges"}>Colleges</NavLink>
                   </li>
-                  <li><NavLink to={"/myToys"}>Admission</NavLink></li>
-                  <li><NavLink to={"/addAToy"}>My College</NavLink></li>
+                  <li><NavLink to={"/admission"}>Admission</NavLink></li>
+                  <li><NavLink to={"/myCollege"}>My College</NavLink></li>
 
                 </div>
 
@@ -53,13 +53,13 @@ const NavigationBar = () => {
                 <ul className="menu menu-horizontal px-1">
                   <li><NavLink to={"/"} className='text-white'>Home</NavLink></li>
                   <li>
-                    <NavLink to={"/allToys"} className='text-white'>Colleges</NavLink>
+                    <NavLink to={"/colleges"} className='text-white'>Colleges</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/myToys"} className='text-white'>Admission</NavLink>
+                    <NavLink to={"/admission"} className='text-white'>Admission</NavLink>
                   </li>
                   <li>
-                    <NavLink to={"/addAToy"} className='text-white'>My College</NavLink>
+                    <NavLink to={"/myCollege"} className='text-white'>My College</NavLink>
                    
                   </li>
                 </ul>
@@ -68,10 +68,10 @@ const NavigationBar = () => {
                   <ul className="menu menu-horizontal px-1">
                     <li><NavLink to={"/"} className='text-white'>Home</NavLink></li>
                     <li>
-                      <NavLink to={"/allToys"} className='text-white'>Colleges</NavLink>
+                      <NavLink to={"/colleges"} className='text-white'>Colleges</NavLink>
                     </li>
-                    <li><NavLink to={"/blog"} className='text-white'>Admission</NavLink></li>
-                    <li><NavLink to={"/blog"} className='text-white'>My College</NavLink></li>
+                    <li><NavLink to={"/admission"} className='text-white'>Admission</NavLink></li>
+                    <li><NavLink to={"/myCollege"} className='text-white'>My College</NavLink></li>
                   </ul>
                 </div>
             }
@@ -97,7 +97,7 @@ const NavigationBar = () => {
           </div>
         </div>
       </div>
-      
+      <div className='w-full h-1 bg-orange-600'></div>
     </div>
   );
 };
