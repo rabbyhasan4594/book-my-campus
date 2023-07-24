@@ -1,8 +1,10 @@
-import React from 'react';
+import React, { useContext } from 'react';
 
 const MyCollege = () => {
+    
     return (
-        <div>
+        <div className='bg-cyan-600 py-5'>
+
             
         </div>
     );

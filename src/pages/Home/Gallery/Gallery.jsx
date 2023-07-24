@@ -13,7 +13,15 @@ import { Pagination } from 'swiper/modules';
 
 const Gallery = () => {
     return (
-        <div className='lg:ms-20 p-2 lg:me-20'>
+        <div className='pt-8'>
+            <div className='max-w-screen-lg mx-auto p-4 flex flex-col justify-center w-full '>
+                    <div className='pb-8 text-white mt-8 text-center'>
+                        <p className='text-4xl font-bold border-b-4 border-white p-2 inline'>Gallery</p>
+                        <p className='py-6'></p>
+                    </div>
+                   
+                </div>
+                <div className='lg:ms-20 p-2 lg:me-20'>
        <Swiper
         slidesPerView={2}
         spaceBetween={30}
@@ -34,6 +42,8 @@ const Gallery = () => {
       </Swiper>
      
         </div>
+        </div>
+       
     );
 };
 

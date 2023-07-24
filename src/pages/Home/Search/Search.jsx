@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Search = () => {
     const [searchText, setSearchText] = useState("");
     return (
-        <div className="  bg-cyan-600">
+        <div className="  bg-cyan-600 py-5">
   
   <div className=" mx-auto  gap-2">
    

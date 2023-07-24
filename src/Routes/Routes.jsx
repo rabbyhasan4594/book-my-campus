@@ -41,8 +41,9 @@ const router = createBrowserRouter([
 
     },
     {
-        path: "/admissionForm",
-        element: <AdmissionForm></AdmissionForm>,   
+        path: "/admissionForm/:id",
+        element: <AdmissionForm></AdmissionForm>,
+        loader: ({params}) => fetch(`http://localhost:5000/college/${params.id}`)   
 
     },
     {
@@ -50,8 +51,16 @@ const router = createBrowserRouter([
         element: <MyCollege></MyCollege>,   
 
     },
+    {
+
+        path: '/chefRecipes/:id',
+        element:  <AdmissionForm/>,
+       
+
+    }
         ]
     },
+
     
     
 ])
