@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import College from '../College/College';
+import { AuthContext } from '../../Providers/AuthProvider';
 
 const Colleges = () => {
 
     const [colleges, setColleges] = useState([]);
-    
+    const { loading } = useContext(AuthContext);
     useEffect(() => {
         fetch("https://book-my-campus-server.vercel.app/colleges")
             .then((res) => res.json())

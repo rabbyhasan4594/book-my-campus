@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Outlet } from 'react-router-dom';
 import NavigationBar from '../Share/NavigationBar/NavigationBar';
+import Footer from '../Share/Footer/Footer';
 
 
 
@@ -12,6 +13,7 @@ const Main = () => {
             <NavigationBar></NavigationBar>
            
             <Outlet></Outlet>
+            <Footer></Footer>
         </div>
     );
 };
