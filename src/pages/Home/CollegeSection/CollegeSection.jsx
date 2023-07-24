@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const CollegeSection = ({data}) => {
     const{collegeImage,collegeName,collegeRating,admissionDate,numberOfResearch,_id,events,researchHistory,sportsFacilities
@@ -16,7 +17,9 @@ const CollegeSection = ({data}) => {
                             <p className='font-medium'>Research History: {researchHistory}</p>
                             <p className='font-medium'>Sports: {sportsFacilities}</p>
                             
-                            <button className="btn btn-sm btn-outline btn-warning w-2/5">details</button>
+                            <Link to={`/details/${_id}`}>
+                           <button className="btn btn-sm btn-outline btn-warning w-2/5">details</button>
+                           </Link>
                             
                            
                         </div>

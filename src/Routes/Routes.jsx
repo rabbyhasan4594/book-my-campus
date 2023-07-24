@@ -9,6 +9,8 @@ import Admission from '../pages/Admission/Admission';
 import MyCollege from '../pages/MyCollege/MyCollege';
 import Home from '../pages/Home/Home/Home';
 import AdmissionForm from '../pages/AdmissionForm/AdmissionForm';
+import CollegeDetails from '../pages/CollegeDetails/CollegeDetails';
+import PrivateRoute from './PrivateRoute';
 
 
 const router = createBrowserRouter([
@@ -41,6 +43,12 @@ const router = createBrowserRouter([
 
     },
     {
+        path: "/details/:id",
+        element: <PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>, 
+        loader: ({params}) => fetch(`http://localhost:5000/details/${params.id}`)   
+
+    },
+    {
         path: "/admissionForm/:id",
         element: <AdmissionForm></AdmissionForm>,
         loader: ({params}) => fetch(`http://localhost:5000/college/${params.id}`)   
@@ -51,9 +59,10 @@ const router = createBrowserRouter([
         element: <MyCollege></MyCollege>,   
 
     },
+    
     {
 
-        path: '/chefRecipes/:id',
+        path: '/admissionForm/:id',
         element:  <AdmissionForm/>,
        
 

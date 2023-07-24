@@ -56,11 +56,11 @@ const AdmissionForm = () => {
                             />
                         </div>
                         <div className='mb-2'>
-                                <h1>Seller Email</h1>
+                                <h1>User Email</h1>
                                 <input
                                     className="text-input px-10 py-2 rounded-lg"
                                     value={user?.email}
-                                    {...register("sellerEmail", { required: true })}
+                                    {...register("email", { required: true })}
                                     placeholder="your email"
                                     type="email"
                                 />
@@ -91,6 +91,15 @@ const AdmissionForm = () => {
                                 className="text-input px-10 py-2 rounded-lg"
                                 {...register("subject", { required: true })}
                                 placeholder="Subject"
+                                defaultValue=""
+                            />
+                        </div>
+                        <div className='mb-2'>
+                            <h1>Date of Birth</h1>
+                            <input
+                                className="text-input px-10 py-2 rounded-lg"
+                                {...register("birthday", { required: true })}
+                                placeholder="Birthday"
                                 defaultValue=""
                             />
                         </div>
