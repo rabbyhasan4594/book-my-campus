@@ -5,9 +5,9 @@ const CollegeSection = ({data}) => {
     }=data;
     return (
         <div className='text-white'>
-           <div className="card card-compact hover:scale-105 duration-500 lg:w-[330px]  rounded-lg shadow-md shadow-orange-500">
+           <div className="card card-compact hover:scale-105 duration-500 lg:w-[330px]  rounded-lg shadow-md shadow-white">
                         <figure className='p-2 '><img className='lg:h-[245px] rounded-lg' src={collegeImage} alt="College" /></figure>
-                        <div className="card-body  shadow-sm shadow-orange-500">
+                        <div className="card-body  shadow-sm shadow-white">
                             <h2 className="card-title">College Name: {collegeName}
                             </h2>
                             
