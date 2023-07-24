@@ -7,7 +7,7 @@ import Swal from 'sweetalert2';
 const AdmissionForm = () => {
     const {id} = useParams();
     const College = useLoaderData();
-    console.log(College.collegeName);
+    
     const { user } = useContext(AuthContext);
     const { register, handleSubmit, watch, formState: { errors } } = useForm();
 
@@ -15,7 +15,7 @@ const AdmissionForm = () => {
     const onSubmit = data => {
 
 
-        fetch("http://localhost:5000/admission", {
+        fetch("https://book-my-campus-server-rabbyhasan4594.vercel.app/admission", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(data),

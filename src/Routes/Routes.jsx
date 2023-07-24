@@ -11,47 +11,56 @@ import Home from '../pages/Home/Home/Home';
 import AdmissionForm from '../pages/AdmissionForm/AdmissionForm';
 import CollegeDetails from '../pages/CollegeDetails/CollegeDetails';
 import PrivateRoute from './PrivateRoute';
+import ErrorPage from '../pages/ErrorPage/ErrorPage';
 
 
 const router = createBrowserRouter([
     {
         path: "/",
         element: <Main></Main>,
+       
         children: [
             {
                 path: '/',
                 element: <Home></Home>,
+                errorElement: <ErrorPage />,
             },
             {
         path:"/login",
         element:<Login></Login>,
+        errorElement: <ErrorPage />,
     },
     
     {
         path: "/registration",
-        element: <Register></Register>,   
+        element: <Register></Register>,
+        errorElement: <ErrorPage />,  
 
     },
     {
         path: "/colleges",
-        element: <Colleges></Colleges>,   
+        element: <Colleges></Colleges>,
+        errorElement: <ErrorPage />, 
 
     },
     {
         path: "/admission",
-        element: <Admission></Admission>,   
+        element: <Admission></Admission>,
+        errorElement: <ErrorPage /> 
 
     },
     {
         path: "/details/:id",
-        element: <PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>, 
-        loader: ({params}) => fetch(`http://localhost:5000/details/${params.id}`)   
+        element: <PrivateRoute><CollegeDetails></CollegeDetails></PrivateRoute>,
+        errorElement: <ErrorPage />,
+        loader: ({params}) => fetch(`https://book-my-campus-server-rabbyhasan4594.vercel.app/details/${params.id}`)   
 
     },
     {
         path: "/admissionForm/:id",
-        element: <AdmissionForm></AdmissionForm>,
-        loader: ({params}) => fetch(`http://localhost:5000/college/${params.id}`)   
+        element: <PrivateRoute><AdmissionForm></AdmissionForm></PrivateRoute>,
+        errorElement: <ErrorPage />,
+        loader: ({params}) => fetch(`https://book-my-campus-server-rabbyhasan4594.vercel.app/college/${params.id}`)   
 
     },
     {
@@ -60,14 +69,8 @@ const router = createBrowserRouter([
 
     },
     
-    {
-
-        path: '/admissionForm/:id',
-        element:  <AdmissionForm/>,
-       
-
-    }
-        ]
+    
+       ]
     },
 
     

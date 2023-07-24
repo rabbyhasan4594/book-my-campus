@@ -9,12 +9,12 @@ const Footer = () => {
   
             <footer className="footer p-10 text-base-content">
   <div>
-    <img className='w-1/3' src="" alt="" />
-    <p className='text-white'>Book My College<br/>
-    <br />Copyright © 2023 Book My College. All rights reserved.</p>
+    <img className='w-1/4' src="https://i.ibb.co/RzCsYDK/logo4.png" alt="" />
+    <p className='text-white'>Book My Campus<br/>
+    <br />Copyright © 2023 Book My Campus. All rights reserved.</p>
   </div> 
   <div className='text-white'>
-    <span className="text-black font-bold">Sub-category</span> 
+    <span className="text-black font-bold">All Colleges</span> 
     
     <span className="">ABC College</span> 
     <span className="">XYZ College</span> 

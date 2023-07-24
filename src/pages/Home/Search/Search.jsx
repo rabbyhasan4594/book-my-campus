@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 const Search = () => {
     const [searchText, setSearchText] = useState("");
     return (
-        <div className="  bg-cyan-600 py-5">
+        <div className="  bg-cyan-600 py-10">
   
   <div className=" mx-auto  gap-2">
    
@@ -11,7 +11,7 @@ const Search = () => {
           <input  placeholder='Search college name'
             onChange={(e) => setSearchText(e.target.value)}
             type="text"
-            className="px-40 py-3 rounded-lg"
+            className="lg:px-40 py-3 rounded-lg"
           />{" "}
           <button className='btn' >Search</button>
         </div>

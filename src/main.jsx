@@ -10,7 +10,7 @@ import router from './Routes/Routes';
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
    <AuthProvider>
-      <RouterProvider router={router}></RouterProvider>
+      <div className='bg-cyan-600'><RouterProvider router={router}></RouterProvider></div>
     </AuthProvider>
   </React.StrictMode>,
 )

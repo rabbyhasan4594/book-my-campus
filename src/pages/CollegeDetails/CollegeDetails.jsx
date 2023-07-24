@@ -3,7 +3,7 @@ import { useLoaderData } from 'react-router-dom';
 
 const CollegeDetails = () => {
     const College = useLoaderData();
-    console.log(College);
+   
     const{collegeImage,collegeName,collegeRating,admissionDate,numberOfResearch,_id,events,researchHistory,sportsFacilities}=College;
     return (
         <div className='bg-cyan-600 py-8'>

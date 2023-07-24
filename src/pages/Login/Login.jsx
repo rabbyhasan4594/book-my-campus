@@ -49,15 +49,18 @@ const Login = () => {
 
     return (
         <div>
-            
+            <div className='pb-10 text-white mt-10 text-center'>
+                        <p className='text-4xl font-bold border-b-4 border-white p-2 inline'>Login Here</p>
+                        
+                    </div>
             <div>
-                <div className="hero min-h-screen bg-gray-400 ">
+                <div className="hero min-h-screen  bg-cyan-600">
                     <div className="hero-content flex-col lg:flex-row lg:mt-14">
                         <div className="text-center lg:text-left lg:w-1/3 lg:me-10">
 
                             <img className='rounded-lg ' src="https://i.ibb.co/2h9ByVY/main.png" alt="" />
                         </div>
-                        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-cyan-600">
+                        <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-gray-400">
                             <form onSubmit={handleLogin} className="card-body">
                                 <div className="form-control">
                                     <label className="label">
