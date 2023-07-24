@@ -3,6 +3,7 @@ import React from 'react';
 import CollegesSection from '../CollegesSection/CollegesSection';
 import Search from '../Search/Search';
 import Gallery from '../Gallery/Gallery';
+import ResearchPaper from '../ResearchPaper/ResearchPaper';
 
 const Home = () => {
     return (
@@ -10,6 +11,7 @@ const Home = () => {
             <Search></Search>
            <CollegesSection></CollegesSection>
            <Gallery></Gallery>
+           <ResearchPaper></ResearchPaper>
         </div>
     );
 };
